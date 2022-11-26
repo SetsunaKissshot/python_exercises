@@ -3,13 +3,15 @@ import pygame
 from settings import Settings
 from ship import Ship
 
+
 class AlienInvasion:
     def __init__(self):
         pygame.init()
         self.settings = Settings()
 
         # Set screen resolution
-        self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
+        self.screen = pygame.display.set_mode(
+            (self.settings.screen_width, self.settings.screen_height))
 
         # Set title
         pygame.display.set_caption("Alien Invasion")
@@ -28,6 +30,7 @@ class AlienInvasion:
 
             # Regenerate screen every loop
             pygame.display.flip()
+
 
 if __name__ == '__main__':
     ai = AlienInvasion()

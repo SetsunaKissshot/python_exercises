@@ -1,5 +1,6 @@
 import pygame
 
+
 class Ship:
     def __init__(self, ai_game):
         '''Settings about ship'''
@@ -8,7 +9,8 @@ class Ship:
         self.screen_rect = ai_game.screen.get_rect()
 
         # Load ship image and get circumscribed rectangle shape
-        self.image = pygame.image.load('images/ship.bmp')
+        self.image = pygame.image.load(
+            '/home/setsuna/workspace/python_exercises/alien_invasion/images/ship.bmp')
         self.rect = self.image.get_rect()
 
         # Put ship at the bottom of screen
